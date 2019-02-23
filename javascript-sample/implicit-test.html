@@ -11,10 +11,10 @@
         <script>
             var clientInfo = {
                 client_id : '(your-client-id)',
-                redirect_uri : 'https://(hostname)/login-callback.html'
+                redirect_uri : 'https://gluuwebappclient.azurewebsites.net/login-callback.html'
             };
 
-            var providerInfo = OIDC.discover('https://(providername)');
+            var providerInfo = OIDC.discover('https://login.dev.flvc.org');
             OIDC.setClientInfo( clientInfo );
             OIDC.setProviderInfo( providerInfo );
             OIDC.storeInfo(providerInfo, clientInfo);
